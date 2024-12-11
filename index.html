@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio de Brasília</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="clock-card">
+            <div class="clock-header">
+                <svg xmlns="http://www.w3.org/2000/svg" class="clock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <h1>Horário de Brasília</h1>
+            </div>
+            
+            <div class="time-display">
+                <div class="time-block">
+                    <span id="hours">00</span>
+                </div>
+                <span class="separator">:</span>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                </div>
+                <span class="separator">:</span>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                </div>
+            </div>
+
+            <div class="date-display">
+                <div class="date-block">
+                    <span id="date">Carregando...</span>
+                </div>
+            </div>
+
+            <div class="timezone">
+                GMT-3
+            </div>
+            <div>
+                <h1 style="text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Sr. Antonio Cardoso Neto</h1>
+            </div>
+        </div>
+    </div>
+    <script src="utils.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
